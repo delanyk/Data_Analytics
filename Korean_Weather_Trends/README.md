@@ -1,6 +1,8 @@
 # Korean Weather Phenomena and Trends Project
 
-This project intends to show the weather phenomena and trends from three cities from different geographical points in South, Korea. It presents the annual extreme temperate trends, weather pollution, and rainfall. The left side is displayed in a violin plots to easily see the distribution of rainfall, polution and temperature per day. Graphs in the center show the mean as a solid line over the course of year plotted by month with monthly ranges of the highs and lows overlayed.The third column of graphs show the number of days with extreme conditions given a respective category.
+This project intends to show the weather phenomena and trends from three cities from different geographical points in South, Korea. It presents the annual extreme temperate trends, weather pollution, and rainfall.
+
+The left side is displayed in a violin plots to easily see the distribution of rainfall, polution and temperature per day. Graphs in the center show the mean as a solid line over the course of year plotted by month with monthly ranges of the highs and lows overlayed.The third column of graphs show the number of days with extreme conditions given a respective category.
 
 ##  Results
 ![alt Korean Weather Trends](https://raw.githubusercontent.com/delanyk/Data_Analytics/master/Korean_Weather_Trends/Annual_trends_korea.jpg)
