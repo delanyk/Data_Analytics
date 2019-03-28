@@ -1,44 +1,50 @@
 # Record Temperature in Seoul, South Korea
 
-This project intends to show the weather phenomena and trends from three cities from different geographical points in South, Korea. It presents the annual extreme temperate trends, weather pollution, and rainfall. The evaluation and processig of the data was done in Pandas. Several different CSV files were imported and put into several different dataframes that were then cleaned and filtered. 
-
-
+This project intends to show the current record high and low temperatures for each day of the year in Seoul, South Korea. The year of 2015 is shown as a plot against the previous 10 years. In addition, the there are representations of the 5 year yearcords to the 10 year year records, the change after 10 years, and the number of record breaking temperatures in over the records from the previous five years. 
+<br/>
+<br/>
 
 ##  Results
 ![alt Seoul Temperature](https://raw.githubusercontent.com/delanyk/Data_Analytics/master/Seoul_Temperatures/Seoul_record_temperatures.jpg)
 
-The left side is displayed in a violin plots to easily see the distribution of rainfall, polution and temperature per day. Graphs in the center show the mean as a solid line over the course of year plotted by month with monthly ranges of the highs and lows overlayed.The third column of graphs show the number of days with extreme conditions given a respective category.
-
-
+<br/>
+<br/>
+![alt 10 year change](https://raw.githubusercontent.com/delanyk/Data_Analytics/master/Seoul_Temperatures/10_year_change.png)
+<br/>
+<br/>
+![alt extreme temps](https://raw.githubusercontent.com/delanyk/Data_Analytics/master/Seoul_Temperatures/extreme_temps.png)
+<br/>
+<br/>
 
 ## Prerequisites
-You will need numpy, matplotlib, pandas and seaborn
+You will need matplotlib and pandas libraries
 
 ```bash
-pip install numpy
+
 pip install matplotlib
 pip install pandas
-pip install seaborn
+
 ```
 
-
+<br/>
+<br/>
 
 ## Cleaning the data
 
 
-Before the data could be fully processed. Theere were many things in the data that were incosistant. Data was orignally collected on five cities, but two cities had too many null values for the time periods and could not be included to avoid improvised findings. 
-
-Also leap years were removed to avoid inconsistancies in the plotting of the anual daily 
+Before the data could be fully processed. Theere were many things in the data that were incosistant.to ease in the evaluation, leap years were removed from the data, and the data had to be presented in a 365 days in a year rather than day and month to ease in the representation 
 
 
 ```python
 # removing leap year
-df = df[df['date'] != '02/29/2008']
+df = df[df['Month-day'] != '02-29']
 
-# removing cities 
-df = df[(df['city'] != 'city4') & (df['city'] != 'city5')]
+# Converting to individual day
+df['Date'] = pd.DatetimeIndex(df['Date']).dayofyear
 
 ```
+<br/>
+<br/>
 
 ## Running the Code
 
@@ -57,17 +63,20 @@ Import the dependencies
 % matplotlib notebook
 import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
-import seaborn as sns
-```
 
+#import the data
+df = pd.read_csv("Seoul_Temp_data.csv")
+```
+<br/>
+<br/>
 
 ## The Data
 
-The data for this project was collected from the [Korean National Weather Service](http://www.kma.go.kr/eng/index.jsp), a publically funded and open data collection. The data was collected for the years 2008 to 2017.
-
-
-
+The data for thThe data comes from a subset of The National Centers for Environmental Information (NCEI) [Daily Global Historical Climatology Network] (https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/readme.txt) (GHCN-Daily). The GHCN-Daily is comprised of daily climate records from thousands of land surface stations across the globe.
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## Authors
 
