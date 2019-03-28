@@ -3,7 +3,8 @@
 This project intends to show the weather phenomena and trends from three cities from different geographical points in South, Korea. It presents the annual extreme temperate trends, weather pollution, and rainfall. The evaluation and processig of the data was done in Pandas. Several different CSV files were imported and put into several different dataframes that were then cleaned and filtered. 
 <br/>
 <br/>
-
+<br/>
+<br/>
 
 
 ##  Results
