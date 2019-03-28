@@ -6,13 +6,22 @@ This project intends to show the current record high and low temperatures for ea
 
 ##  Results
 ![alt Seoul Temperature](https://raw.githubusercontent.com/delanyk/Data_Analytics/master/Seoul_Temperatures/Seoul_record_temperatures.jpg)
+<br/>
+In this graph, the previous ten year high and low temperatures are represented in on a 365 day axis with the variance presented as the grey inset. The records broken in the year 2015 are red scatterplots over the graph.
+<br/>
+<br/>
+
+![alt 10 year change](https://raw.githubusercontent.com/delanyk/Data_Analytics/master/Seoul_Temperatures/10_year_change.png)
+<br/>
+In these two graphs, the temperature difference from 2005 and 2015 shows how the temperatures have shifted over the previous 10 years. As shown, tempurtures of 2015 were consistantly and in many cases significantly higher than 10 years prior. Likewise, the cold temperatures, though in some cases there were significant drops, most of the points plotted show slight rise in the extreme low temperatures in 2015. 
 
 <br/>
 <br/>
-![alt 10 year change](https://raw.githubusercontent.com/delanyk/Data_Analytics/master/Seoul_Temperatures/10_year_change.png)
-<br/>
-<br/>
+
 ![alt extreme temps](https://raw.githubusercontent.com/delanyk/Data_Analytics/master/Seoul_Temperatures/extreme_temps.png)
+<br/>
+This graph shows each year, with respect to the previous five years where the data was available and how many days in which records were broken that year. As a general trend, the number of record breaking high temperatures has continued to increase nearly each year, the number of record breaking low tempertures has as well been relatively consistant. As it appears within the data, each year is becoming more extreme than the previous years.
+
 <br/>
 <br/>
 
