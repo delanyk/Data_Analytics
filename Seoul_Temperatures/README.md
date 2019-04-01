@@ -1,6 +1,6 @@
 # Record Temperature in Seoul, South Korea
 
-This project intends to show the current record high and low temperatures for each day of the year in Seoul, South Korea. The year of 2015 is shown as a plot against the previous 10 years. In addition, the there are representations of the 5 year yearcords to the 10 year year records, the change after 10 years, and the number of record breaking temperatures in over the records from the previous five years. 
+This project intends to show the current record high and low temperatures for each day of the year in Seoul, South Korea. The year of 2015 is shown as a plot against the previous 10 years. In addition, the there are representations of the 5 year records to the 10 year records, the change after 10 years, and the number of record breaking temperatures in over the records from the previous five years. 
 <br/>
 <br/>
 
